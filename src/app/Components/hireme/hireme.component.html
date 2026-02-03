@@ -1,0 +1,39 @@
+<section class="hire-me" id="contact">
+  <div class="container">
+
+    <h2>Hire Me</h2>
+    <p>
+      Interested in working together?  
+      Feel free to contact me for projects or job opportunities.
+    </p>
+
+    <form (ngSubmit)="submitForm()">
+      <input
+        type="text"
+        placeholder="Your Name"
+        [(ngModel)]="contact.name"
+        name="name"
+        required
+      />
+
+      <input
+        type="email"
+        placeholder="Your Email"
+        [(ngModel)]="contact.email"
+        name="email"
+        required
+      />
+
+      <textarea
+        placeholder="Your Message"
+        [(ngModel)]="contact.message"
+        name="message"
+        rows="5"
+        required
+      ></textarea>
+
+      <button type="submit" >Send Message</button>
+    </form>
+
+  </div>
+</section>

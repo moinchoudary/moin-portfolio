@@ -1,0 +1,35 @@
+<nav class="navbar">
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <span>&lt; /&gt;</span> Moin Choudhary
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="nav-links">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about-us">About</a></li>
+      <li><a routerLink="/skills">Skills</a></li>
+      <li><a  routerLink="/projects">Projects</a></li>
+      <li><a routerLink="/hire-me" class="hire">Hire Me</a></li>
+    </ul>
+
+    <!-- Mobile Menu Icon -->
+    <div class="menu-icon" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <ul class="mobile-menu" [class.open]="menuOpen">
+    <li><a (click)="toggleMenu()" href="#home">Home</a></li>
+    <li><a (click)="toggleMenu()" href="#about">About</a></li>
+    <li><a (click)="toggleMenu()" href="#skills">Skills</a></li>
+    <li><a (click)="toggleMenu()" href="#projects">Projects</a></li>
+    <li><a (click)="toggleMenu()" href="#contact">Contact</a></li>
+  </ul>
+</nav>
