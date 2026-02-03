@@ -1,0 +1,130 @@
+/* General Footer Styling */
+.footer {
+background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+  color: #dcdcdc;
+  padding-top: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.disabled-link {
+  pointer-events: none;   /* click band */
+  opacity: 0.5;           /* disabled look */
+  cursor: not-allowed;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Sections Styling */
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+/* Brand Section */
+.logo-text {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.logo-text span {
+  color: #007bff; /* Aapka primary brand color yahan dalein */
+}
+
+.about p {
+  line-height: 1.6;
+  color: #a3a3a3;
+}
+
+.contact span {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.contact i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+/* Links Section */
+.links h3, .social h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links ul li {
+  margin-bottom: 10px;
+}
+
+.links ul li a {
+  color: #a3a3a3;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.links ul li a:hover {
+  color: #fff;
+  padding-left: 5px; /* Hover par thoda shift hoga */
+}
+
+/* Social Icons */
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  background: #007bff; /* Brand color */
+  transform: translateY(-3px);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  background: #111;
+  color: #777;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #333;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-section {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}

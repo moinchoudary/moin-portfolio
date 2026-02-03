@@ -1,31 +1,36 @@
-<section class="home">
+<section class="home-hero">
   <div class="container">
+    <div class="hero-wrapper">
+      
+      <div class="text-section">
+        <div class="intro-box">
+          <span class="greeting">Hello, I am</span>
+          <h1 class="name-text">{{ name }}</h1>
+          <h2 class="role-text">
+            Creative <span class="highlight">Web Developer</span>
+          </h2>
+        </div>
 
-    <!-- Left Content -->
-    <div class="text-section">
-      <h3>Hello, I'm</h3>
-      <h1>{{ name }}</h1>
+        <p class="description">
+          I specialize in building clean, scalable, and high-performance web applications. 
+          With a focus on modern UI/UX, I turn complex ideas into seamless digital experiences using <strong>React</strong> and <strong>Angular</strong>.
+        </p>
 
-      <h2 class="typing">
-        Web Developer | React Developer .
-      </h2>
+        <div class="cta-group">
+          <a routerLink="/projects" class="btn btn-primary">
+            View My Work <i class="fas fa-arrow-right"></i>
+          </a>
+          <a routerLink="/hire-me" class="btn btn-outline">Hire Me</a>
+        </div>
 
-      <p>
-        I am a passionate web developer specializing in React js.
-        I build clean, scalable, and high-performance web applications
-        with modern UI/UX.
-      </p>
-
-      <div class="buttons">
-        <a routerLink="/projects" class="btn primary">My Projects</a>
-        <a routerLink="/hire-me" class="btn secondary">Hire Me</a>
       </div>
-    </div>
 
-    <!-- Right Image -->
-    <div class="image-section">
-      <img src="/images/moin.jpg" alt="Profile Image" />
-    </div>
+      <div class="image-section">
+        <div class="image-boundary">
+          <img src="/images/moin.jpg" alt="Profile Image" class="profile-img" />
+          </div>
+        </div>
 
+    </div>
   </div>
 </section>
