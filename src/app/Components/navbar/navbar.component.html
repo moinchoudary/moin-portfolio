@@ -26,10 +26,10 @@
 
   <!-- Mobile Menu -->
   <ul class="mobile-menu" [class.open]="menuOpen">
-    <li><a (click)="toggleMenu()" href="#home">Home</a></li>
-    <li><a (click)="toggleMenu()" href="#about">About</a></li>
-    <li><a (click)="toggleMenu()" href="#skills">Skills</a></li>
-    <li><a (click)="toggleMenu()" href="#projects">Projects</a></li>
-    <li><a (click)="toggleMenu()" href="#contact">Contact</a></li>
+    <li><a (click)="toggleMenu()" routerLink="/">Home</a></li>
+    <li><a (click)="toggleMenu()" routerLink="/about-us">About</a></li>
+    <li><a (click)="toggleMenu()" routerLink="/skills">Skills</a></li>
+    <li><a (click)="toggleMenu()" routerLink="/projects">Projects</a></li>
+    <li><a (click)="toggleMenu()" routerLink="/hire-me">Contact</a></li>
   </ul>
 </nav>
