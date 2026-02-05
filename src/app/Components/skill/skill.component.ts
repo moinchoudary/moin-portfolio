@@ -13,10 +13,10 @@ export class SkillComponent {
 
   
   skills = [
-    { name: 'Angular', level: 90 },
-    { name: 'HTML & CSS', level: 95 },
+    { name: 'Angular', level: 75 },
+    { name: 'HTML & CSS', level: 85 },
     { name: 'JavaScript', level: 85 },
-    { name: 'TypeScript', level: 80 },
+    { name: 'TypeScript', level: 75 },
     { name: 'React', level: 70 },
     { name: 'Node.js', level: 65 }
   ]
